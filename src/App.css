@@ -1,0 +1,40 @@
+*{
+  font-family: "Google Sans", arial, sans-serif;
+}
+.offcanvas-animation .offcanvas {
+  transition: transform 0.3s ease-in-out;
+}
+.offcanvas-animation .offcanvas.show {
+  transform: translateX(0);
+}
+.offcanvas-animation .offcanvas:not(.show) {
+  transform: translateX(100%);
+}
+
+/* Home.css */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.typewriter-text {
+  font-size: 40px; /* Increase the font size as needed */
+  font-weight: bold; /* Make the text bold */
+}
+
+.zoom-effect {
+  transition: transform 0.3s ease; /* Smooth transition */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.zoom-effect:hover {
+  transform: scale(1.2); /* Scale the image to 120% on hover */
+}
