@@ -25,11 +25,18 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    const emailData = {
+      email: formData.email,  
+      message: formData.message,  
+      date: new Date().toLocaleString(),  // Generate date dynamically
+    };
+
     emailjs.send(
-      'service_z6vye1p',      // Your EmailJS service ID
-      'template_pdh6pxb',     // Your EmailJS template ID
-      formData,
-      'rw1gguxY-J0XCK5z_'     // Your EmailJS user ID
+      'service_6x87gzk',      // Your EmailJS service ID
+      'template_k8264lb',     // Your EmailJS template ID
+      emailData,
+      'R_wfeLPUtHXXLlGVL'     // Your EmailJS user ID
     )
     .then((response) => {
       console.log('Email successfully sent!', response.status, response.text);

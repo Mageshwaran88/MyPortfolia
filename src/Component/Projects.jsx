@@ -9,7 +9,7 @@ import "aos/dist/aos.css";
 const Projects = () => {
     const projectList = [
         { title: 'Portfolio Website', description: 'A personal portfolio website to showcase my skills, projects, and experience. Built with React.js, Bootstrap, and Sass.', imgSrc: img, Url: "https://my-portfolia-git-main-mageshwaran88s-projects.vercel.app" },
-        { title: 'E-commerce Platform', description: 'A responsive shopping website featuring dynamic product listing. Built using React, JavaScript, HTML, and CSS for a fast and interactive shopping experience.', imgSrc: img1, Url: "https://shoppingwebsite-eta.vercel.app/" },
+        { title: 'Shoping website', description: 'A responsive shopping website featuring dynamic product listing. Built using React, JavaScript, HTML, and CSS for a fast and interactive shopping experience.', imgSrc: img1, Url: "https://shoppingwebsite-eta.vercel.app/" },
         { title: 'Real-Time Chat Application', description: 'A real-time chat application with private and group chat functionalities. Developed using React.js, Bootstrap, and Sass.', imgSrc: img3, Url: "https://github.com/Mageshwaran88/" }
         // Add more projects here
     ];
@@ -61,7 +61,7 @@ const Projects = () => {
                                 <Card.Text style={{ color: "gray" }}>{project.description}</Card.Text>
                                 <Card.Text>
                                     <a href={project.Url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "#007bff" }}>
-                                        Clike here
+                                        Click here
                                     </a>
                                 </Card.Text>
                             </Card.Body>
